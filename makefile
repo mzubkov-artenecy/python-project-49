@@ -12,3 +12,4 @@ lint:
 package-install:
 	pip install whl
 	pip install prompt
+	pip install asciinema
