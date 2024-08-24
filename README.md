@@ -3,4 +3,4 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/b3bad4481441392bdf99/maintainability)](https://codeclimate.com/github/mzubkov-artenecy/python-project-49/maintainability)
 
-[![Video for brain-even task]](https://disk.yandex.ru/i/dr6t8I0d56d5fg)
+[* Video for brain-even task](https://disk.yandex.ru/i/dr6t8I0d56d5fg)
