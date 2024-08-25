@@ -2,9 +2,7 @@ from random import randint
 
 import prompt
 
-
-def welcome_user() -> str:
-    return prompt.string("May I have your name? ")
+from brain_games.scripts.games.functions import welcome_user
 
 
 def main():

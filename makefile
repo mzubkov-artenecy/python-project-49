@@ -3,6 +3,9 @@
 build:
 	poetry build
 
+inst:
+	poetry install
+
 publish:
 	poetry publish --dry-run
 
