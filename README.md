@@ -7,4 +7,6 @@
 
 [Video for BRAIN-CALC task](https://disk.yandex.ru/i/MtZatESZVJCcJw)
 
-[Video for BRAIN-GCD task](https://drive.google.com/file/d/1QwvUJZphfTlNfCvX3oZgKR0FPchmFzYv/view?usp=drive_link)
+[Video for BRAIN-GCD task](https://disk.yandex.ru/i/1uJuWeYjO5aKkg)
+
+[Video for BRAIN-PROGRESSION task](https://disk.yandex.ru/i/jnM5ZN_0sFgiFQ)
