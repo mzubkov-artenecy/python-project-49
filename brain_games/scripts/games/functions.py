@@ -15,12 +15,3 @@ def get_greater_common_divisor(n1: int, n2: int) -> int:
             return n1
         n1, n2 = min(n1, n), max(n1, n)
     return n1
-
-
-def is_prime(value: int) -> int:
-    if abs(value) < 4:
-        return True
-    for i in range(2, abs(value) // 2 + 1):
-        if not value % i:
-            return False
-    return True

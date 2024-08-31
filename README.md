@@ -10,5 +10,3 @@
 [Video for BRAIN-GCD task](https://disk.yandex.ru/i/1uJuWeYjO5aKkg)
 
 [Video for BRAIN-PROGRESSION task](https://disk.yandex.ru/i/3Hl5wfh64U_aEg)
-
-[Video for BRAIN-PROGRESSION task](https://disk.yandex.ru/i/MlawKu4RnUuhqg)
