@@ -37,7 +37,7 @@ def main():
             num2 = randint(1, 20)
             result = num1 * num2
         print(f"Question: {num1} {OPER_SIGN[oper]} {num2}")
-        answer = prompt.integer("Your answer: ")
+        answer = prompt.integer("Your answer: ", empty=True)
         if answer == result:
             print("Correct!")
             correct_count += 1

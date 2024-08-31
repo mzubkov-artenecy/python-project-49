@@ -6,3 +6,5 @@
 [Video for BRAIN-EVEN task](https://disk.yandex.ru/i/dr6t8I0d56d5fg)
 
 [Video for BRAIN-CALC task](https://disk.yandex.ru/i/MtZatESZVJCcJw)
+
+[Video for BRAIN-GCD task](https://drive.google.com/file/d/1QwvUJZphfTlNfCvX3oZgKR0FPchmFzYv/view?usp=drive_link)
