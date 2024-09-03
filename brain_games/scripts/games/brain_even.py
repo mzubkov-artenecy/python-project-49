@@ -1,8 +1,7 @@
 from random import randint
 
 import prompt
-
-from brain_games.scripts.games.functions import welcome_user
+from brain_games.scripts.games.functions import answer_message, welcome_user
 
 
 def main():
@@ -15,18 +14,14 @@ def main():
     while correct_count < 3:
         number: int = randint(1, 100)
         print("Question:", number)
-        answer: str = prompt.string("Your answer: ")
-        answer_low: str = answer.lower()
-        if answer_low in answers and answers.index(answer_low) == number % 2:
-            print("Correct!")
+        answer: str = prompt.string("Your answer: ", empty=True) or ""
+        answer: str = answer.lower()
+        result = answers[number % 2]
+        # is_true = answer in answers and answer == result
+        answer_message(name, answer, result)
+        if answer == result:
             correct_count += 1
         else:
-            correct_answer = answers[number % 2]
-            print(
-                f"'{answer}' is wrong answer ;(.",
-                f"Correct answer was '{correct_answer}'.)",
-            )
-            print(f"Let's tey again, {name}!")
             break
     if correct_count == 3:
         print(f"Congratulations, {name}!")

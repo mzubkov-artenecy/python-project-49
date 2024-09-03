@@ -3,6 +3,7 @@ from random import randint
 import prompt
 from brain_games.scripts.games.config import TRIES_COUNT
 from brain_games.scripts.games.functions import (
+    answer_message,
     get_greater_common_divisor,
     welcome_user,
 )
@@ -22,15 +23,10 @@ def main():
                 break
         print(f"Question: {num1} {num2}")  # ({result})")
         answer = prompt.integer("Your answer: ", empty=True)
+        answer_message(name, answer, result)
         if answer == result:
-            print("Correct!")
             correct_count += 1
         else:
-            print(
-                f"'{answer}' is wrong answer ;(.",
-                f"Correct answer is '{result}'.",
-            )
-            print(f"Let's try again, {name}!")
             break
     if correct_count == TRIES_COUNT:
         print(f"Congratulation, {name}!")

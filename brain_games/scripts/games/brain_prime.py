@@ -2,7 +2,11 @@ from random import randint
 
 import prompt
 from brain_games.scripts.games.config import TRIES_COUNT
-from brain_games.scripts.games.functions import welcome_user, is_prime
+from brain_games.scripts.games.functions import (
+    answer_message,
+    is_prime,
+    welcome_user,
+)
 
 
 def main():
@@ -22,15 +26,10 @@ def main():
         print(f"Question: {number} ({result})")
         answer: str = prompt.string("Your answer: ", empty=True) or ""
         answer = answer.lower()
+        answer_message(name, answer, result)
         if answer == result:
-            print("Correct!")
             correct_count += 1
         else:
-            print(
-                f"'{answer}' is wrong answer ;(.",
-                f"Correct answer is '{result}'.",
-            )
-            print(f"Let's try again, {name}!")
             break
     if correct_count == TRIES_COUNT:
         print(f"Congratulation, {name}!")

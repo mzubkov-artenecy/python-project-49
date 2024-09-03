@@ -5,16 +5,16 @@ def welcome_user() -> str:
     return prompt.string("May I have your name? ")
 
 
-def get_greater_common_divisor(n1: int, n2: int) -> int:
-    if n1 == n2:
-        return n1
-    n1, n2 = min(n1, n2), max(n1, n2)
-    while n1 != n2:
-        n = n2 % n1
+def get_greater_common_divisor(number1: int, number2: int) -> int:
+    if number1 == number2:
+        return number1
+    number1, number2 = min(number1, number2), max(number1, number2)
+    while number1 != number2:
+        n = number2 % number1
         if not n:
-            return n1
-        n1, n2 = min(n1, n), max(n1, n)
-    return n1
+            return number1
+        number1, number2 = min(number1, n), max(number1, n)
+    return number1
 
 
 def is_prime(value: int) -> int:
@@ -24,3 +24,14 @@ def is_prime(value: int) -> int:
         if not value % i:
             return False
     return True
+
+
+def answer_message(name, is_true, answer, result) -> str:
+    if is_true:
+        print("Correct!")
+    else:
+        print(
+            f"'{answer}' is wrong answer ;(.",
+            f"Correct answer is '{result}'.",
+        )
+        print(f"Let's try again, {name}!")
