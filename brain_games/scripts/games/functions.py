@@ -26,8 +26,8 @@ def is_prime(value: int) -> int:
     return True
 
 
-def answer_message(name, is_true, answer, result) -> str:
-    if is_true:
+def answer_message(name, answer, result) -> str:
+    if answer == result:
         print("Correct!")
     else:
         print(
