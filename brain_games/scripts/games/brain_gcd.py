@@ -29,7 +29,7 @@ def main():
         else:
             break
     if correct_count == TRIES_COUNT:
-        print(f"Congratulation, {name}!")
+        print(f"Congratulations, {name}!")
 
 
 if __name__ == "__main__":
